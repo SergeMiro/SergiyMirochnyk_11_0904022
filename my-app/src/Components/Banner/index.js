@@ -1,13 +1,17 @@
 import { Component } from "react";
-import NavBar from "../NavBar";
-import './Header.scss'
+import './Banner.scss'
 
-export default class Header extends Component{
+export default class Banner extends Component{
 
    render(){
-      return <header>
-         <img src="" alt="logo Kasa" />
-         <NavBar />
-      </header>
+      const {bannerClass, title } = this.props
+      const classcss = "banner " + bannerClass
+
+      return <section className={classcss}>
+         {
+            //pour ne pas afficher la balise <h1> vide si title est vide cas page apropos
+         title !="" && <h1 className="banner__title"> {title} </h1>
+         }
+      </section>
    }
 } 

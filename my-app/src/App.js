@@ -1,10 +1,8 @@
+
 import { Component, Fragment } from 'react';
-import { Routes } from 'react-router-dom';
 import './App.scss';
-import Header from './Components/Header';
-import Acceuil from './Pages/Acceuil';
-import Apropos from './Pages/Apropos';
-import Erreur from './Pages/Erreur';
+import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
 import Router from './Routes/Routes';
 
 
@@ -14,11 +12,12 @@ export default class App extends Component {
     return (
 
       <Fragment>
-        <Header />
+        <Navbar />
         <Router />
+        <Footer />
       </Fragment>
 
     );
   }
-
+ 
 }
