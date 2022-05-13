@@ -11,14 +11,24 @@
    gap :40px;
    @include responsive(smartphone){
       grid-template-columns: 1fr;
-      padding: 20px;
+      padding: 0px;
+      background-color: #FFFFFF;
+      gap :20px;
    }
       
 }
 
+
 //style card
-.logement{
+.logement-card{
    border-radius: 10px;
+   position: relative;
+      &__overlay{
+         box-shadow: inset -1px -81px 84px -37px #000;
+         inset: 0;
+         position: absolute;
+         border-radius: 10px;
+      }
       &__img{
          object-fit: cover;
          height: 100%;
@@ -31,6 +41,6 @@
          font-weight: $font-medium;
          color:$color-white;
          margin-left: 20px;
-         top: -50px;
+         top: -60px;
       }
 }
