@@ -2,6 +2,7 @@ import { Component } from "react";
 import FooterLogo from '../../assets/images/FooterLogo.svg'
 import './Footer.scss'
 
+//Création du composant Footer
 export default class Footer extends Component{
    render(){
       return <footer className="footer">
@@ -9,5 +10,5 @@ export default class Footer extends Component{
          <p className="footer__lien">© 2022 Kasa. All rights reserved</p>
    </footer>
    }
-
+   
 } 

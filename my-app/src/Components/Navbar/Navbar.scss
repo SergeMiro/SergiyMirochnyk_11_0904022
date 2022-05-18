@@ -1,3 +1,4 @@
+
 @import '../../assets/scss/mixins.scss';
 @import '../../assets/scss/variables.scss';
 
@@ -27,6 +28,7 @@
                         text-transform: uppercase;
                   }
                   color :$color1;
+                  
                   &.active{
                         border-bottom:1px solid $color1;
                   }
